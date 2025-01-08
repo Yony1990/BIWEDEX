@@ -1433,7 +1433,7 @@ textarea::-webkit-scrollbar-thumb:hover {
 
 .redesS i {
     position: relative;
-    top: 5px;
+    top: 20px;
     z-index: 2;
     font-size: 2rem;
     color: #6b46aa;
