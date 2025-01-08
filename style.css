@@ -1,11 +1,7 @@
 @import url("http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+
 
 * {
     margin: 0;
@@ -650,17 +646,17 @@ menu a:hover .rayaA {
 }
 
 @keyframes bacg {
-    0% {background-image: url(./galeriaPrueva/nuevas/7cd49ee6cc6cf37f60f354c14e0ed0b2.jpg);}
+    0% {background-image: url(./img/galeria/nuevas/7cd49ee6cc6cf37f60f354c14e0ed0b2.jpg);}
 
-    20% {background-image: url(./galeriaPrueva/foto-vista-superior.avif);}
+    20% {background-image: url(./img/galeria/nuevas/foto-vista-superior.avif);}
 
-    40% {background-image: url(./galeriaPrueva/nuevas/diseno-y-desarrollo-web-senati-1800-x-1190-1.jpg);}
+    40% {background-image: url(./img/galeria/nuevas/diseno-y-desarrollo-web-senati-1800-x-1190-1.jpg);}
 
-    60% {background-image: url(./galeriaPrueva/nuevas/photo-1499750310107-5fef28a66643.jpeg);}
+    60% {background-image: url(./img/galeria/nuevas/photo-1499750310107-5fef28a66643.jpeg);}
 
-    80% {background-image: url(./galeriaPrueva/nuevas/pngtree-coffee-headphones-laptop-and-phone-in-stunning-3d-rendering-picture-image_4787691.jpg);}  
+    80% {background-image: url(./img/galeria/nuevas/pngtree-coffee-headphones-laptop-and-phone-in-stunning-3d-rendering-picture-image_4787691.jpg);}  
 
-    100% {background-image: url(./galeriaPrueva/nuevas/shutterstock_223243018-1000x699.jpg);}  
+    100% {background-image: url(./img/galeria/nuevas/shutterstock_223243018-1000x699.jpg);}  
 }
 
 .content-nosotros .efecto {
