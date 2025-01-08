@@ -1432,17 +1432,16 @@ textarea::-webkit-scrollbar-thumb:hover {
 }
 
 .redesS i {
-    position: relative;
-    top: 5px;
+
     z-index: 2;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #6b46aa;
     transition: 1s;
     /* padding: 4px 10px; */
     /* border: dashed 2px red; */
 }
 
-.redesS .circul {
+/* .redesS .circul {
     z-index: 1;
     position: absolute;
     transform: translateX(-9px) translateY(-.9px);
@@ -1467,7 +1466,7 @@ textarea::-webkit-scrollbar-thumb:hover {
 
 .redesS a:hover .whatsapp .circul {
     border-color: #61a533;
-}
+} */
 
 .redesS a:hover .insta i {
     color: #ff8000;
