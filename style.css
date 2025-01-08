@@ -17,6 +17,7 @@
 }
 
 body{
+    user-select: none;
     background: #eeeeeeec;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
