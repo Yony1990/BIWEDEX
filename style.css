@@ -797,10 +797,9 @@ h2 {
     position: relative;
 }
 
-.sube {
+.modal-1 .sube, .modal-2 .sube, .modal-3 .sube {
     display: none;
     position: absolute;
-    /* left: 60px; */
     font-size: 2rem;
     color: #6b46aa;
     left: 10px;
@@ -1653,7 +1652,7 @@ textarea::-webkit-scrollbar-thumb:hover {
     .izq {
         width: 600px;
     }
-    .sube {
+    .modal-1 .sube, .modal-2 .sube, .modal-3 .sube {
         display: block;
     }
 }
