@@ -2053,7 +2053,6 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
     .container-all h2 {
         margin-bottom: -15px;
-        width: max-content;
     }
     .pregunta:hover {
         padding: 20px;
