@@ -1100,7 +1100,6 @@ h2 {
 }
 
 .container-pasos {  
-    gap: 5px;
     cursor: default;
     max-width: 1300px;
     margin: 0px auto;
