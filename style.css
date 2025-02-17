@@ -1124,7 +1124,7 @@ h2 {
 
 .container-pasos .pasoComun p  {
     text-align: left;
-    padding: 0 5px;
+    /* padding: 0 5px; */
 }
 
 .container-pasos .paso-2 p  {
