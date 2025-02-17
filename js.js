@@ -97,25 +97,6 @@ let navbar = document.querySelector('.navBar');
 let logo = document.querySelector('.logo');
 
 
-// function removeClassFromHeaderOnResize() {
-//   // Selecciona el header con la clase 'varB'
-//   const header = document.querySelector('header'); 
-
-//   // Verifica si el header existe
-//   if (header) {
-//       // Llama a la función para comprobar el ancho cada vez que la ventana cambie de tamaño
-//       window.addEventListener('resize', function() {
-//           // Obtiene el ancho de la ventana
-//           const windowWidth = window.innerWidth;
-
-//           // Si el ancho es menor o igual a 800px, remueve la clase 'varB'
-//           if (windowWidth <= 800) {
-//               header.classList.remove('navBar');
-//           }
-//       });
-//   }
-// }
-
 window.addEventListener('scroll', function () {
   let scrollActual = window.pageYOffset;
   // console.log (scrollActual)
@@ -160,9 +141,20 @@ document.addEventListener ('click', (e) => {
       menux.classList.toggle('active');
       menu.classList.toggle('active');
     }
-    // if (e.target === menu || e.target === a1 || e.target === a2|| e.target === a3 || e.target === a4 || e.target === a5 ) {
-    //   menu.classList.toggle('active');
-    //   menux.classList.toggle('active');
-    // }
 
+})
+
+// lite - dark
+
+const dark = document.querySelector(".dark");
+const lite = document.querySelector(".lite");
+const clickModos = document.querySelector('.click-modos');
+const body = document.body;
+
+document.addEventListener ('click', (e) => {
+  if (e.target === clickModos) {
+    dark.classList.toggle('active');
+    lite.classList.toggle('active');
+    body.classList.toggle('dark-mode');
+  }
 })
