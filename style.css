@@ -2211,7 +2211,7 @@ h4, .modal-2 i, .modal-3 i {
     }
 }
 
-.grupoo-2 p, .cont p {
+.grupoo-2 p, .cont p, .cont-small p {
     view-timeline-name: --reveal;
 
     animation-name: modalG2;
