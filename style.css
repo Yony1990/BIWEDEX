@@ -14,14 +14,14 @@
 :root{
     --color-background: black;
 
-    --color-dark--lite: #ffffff;
+    --color-dark--lite: #6b46aa;
     --color-dark--lite-mobil: #6b46aa;
     
     --color-text: #ffffff;
     --color-box: rgba(38, 38, 38, 0.73);
 
     --color-info: #d1b6ff54;
-    --color-shadow-modal: 0 0 150px #d6c4ec2f;
+    --color-shadow-modal: 0 0 110px #d6c4ec1f;
 
     --color-header: rgb(26, 26, 26);
     --color-header-text: #ffffff;
@@ -62,7 +62,7 @@
     --color-background-a-hover: #6b46aa82;
 
     --color-text-form-h2: #6b46aa;
-    --color-particles: .2;
+    --color-particles: .4;
 
     --color-text-caja: #4c4c4c;
 }
@@ -79,28 +79,24 @@ body{
     background: var(--color-background);
     color: var(--color-text);
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Afacad Flux', sans-serif; */
     overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
     width: 6px;
     border-radius: 20px;
-
 }
 
 body::-webkit-scrollbar-track {
     cursor: pointer;
     background: var(--color-header);
     border-radius: 20px;
-
 }
 
 body::-webkit-scrollbar-thumb {
     cursor: pointer;
     background: #6b46aa60;
     border-radius: 20px;
-
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -125,7 +121,6 @@ header {
 }
 
 header .logo {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,7 +150,6 @@ header .logo img {
 header h1 {
     position: relative;
     bottom: 5px;
-    /* margin-left: 10px; */
     color: #6b46aa;
     font-family: 'Playfair Display';
 }
@@ -280,13 +274,10 @@ nav li:nth-child(4) {
 }
 
 .button {
-    
     display: flex;
     padding: 8px 15px ;
     cursor: pointer;
-    /* margin-right: 10px; */
     margin-top: -2px;
-    /* font-family: 'Poppins'; */
     font-size: 12px;
     border-radius: 10px;
     font-weight: bold;
@@ -308,8 +299,6 @@ nav li:nth-child(4) {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
 }
 
 .modosLunaSol .click-modos {
@@ -318,7 +307,6 @@ nav li:nth-child(4) {
    width: 20px;
    height: 20px;
    cursor: pointer;
-
 }
 
 .modosLunaSol .click-modos:active {
@@ -331,7 +319,6 @@ nav li:nth-child(4) {
     position: absolute;
     display: none;
     color: var(--color-dark--lite);
-    
     z-index: -2;
 }
 
@@ -389,10 +376,8 @@ menu {
     position: fixed;
     left: -110%;
     width: 100vw;
-    
     margin: 0 auto;
     height: 100vh;
-    
     background-color: var(--color-menu);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px #6b46aa95;
@@ -402,7 +387,6 @@ menu {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    /* padding-left: 20px; */
     transition: 1s ease-in;
 }
 
@@ -416,7 +400,6 @@ menu a {
     color: #6b46aa;
     text-decoration: none;
     font-size: 2rem;
-    /* font-weight: 800; */
     text-transform: uppercase;
     align-items: center;
 }
@@ -573,7 +556,6 @@ menu a:hover .rayaA {
 }
 
 .text {
-    
     max-width: 650px;
     color: var(--color-text);
     font-family: Helvetica;
@@ -623,13 +605,11 @@ menu a:hover .rayaA {
 }
 
 .text .span-4 {
-   
     position: relative;
     left: 140px;
     bottom: 155px;
     font-size: 8rem;
     color: #6b46aa;
-    
 }
 
 .span-5 {
@@ -731,11 +711,8 @@ menu a:hover .rayaA {
 }
 
 .content-nosotros {
-    /* border-radius: 30px; */
     width: 100vw;
-    min-height: 90vh;
-    margin: 0 auto;
-    /* margin-top: -50px; */
+    min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -761,9 +738,8 @@ menu a:hover .rayaA {
 
 .content-nosotros .efecto {
     width: 100%;
-    min-height: 90vh;
-    background: radial-gradient(rgba(64, 55, 68, 0.713) 50px, rgba(39, 33, 39, 0.954) 30%, #000000 90%) ;
-    /* border-radius: 30px; */
+    min-height: 100vh;
+    background: radial-gradient(rgba(64, 55, 68, 0.713) 50px, rgba(39, 33, 39, 0.954) 30%, #000000 85%) ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -806,7 +782,7 @@ h2 {
     justify-content: center;
     gap: 130px;
     padding: 0px;
-    margin: 50px auto;
+    margin: 80px auto;
 }
 
 .no-modal {
@@ -1189,7 +1165,6 @@ h2 {
 
 .container-preguntas-1 {
     margin: 40px;
-    /* padding: 30px 30px; */
     max-width: 800px;
     border-radius: 20px;
     height: 500px;
@@ -1202,7 +1177,6 @@ h2 {
 }
   
 .pregunta {
-    /* position: relative; */
     flex: 1;
     overflow: hidden;
     cursor: pointer;
@@ -1227,7 +1201,6 @@ h2 {
     background: var(--color-prgunta-hover-background);
     transition: all .4s;
     border: solid 2px #6b46aa;
-    /* box-shadow: 0 0 30px #6b46aab4; */
 }
 
 .pregunta span {
@@ -1480,8 +1453,7 @@ textarea::-webkit-scrollbar-thumb:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .content-fin p {
@@ -1502,18 +1474,14 @@ textarea::-webkit-scrollbar-thumb:hover {
 }
 
 .redesS i {
-
     z-index: 2;
     font-size: 2.3rem;
     color: #6b46aa;
     transition: 1s;
-    /* padding: 4px 10px; */
-    /* border: dashed 2px red; */
 }
 
 .redesS a:hover .insta i {
-    color: #ff8000;
-    
+    color: #ff8000; 
 }
 
 .redesS a:hover .facebook i {
@@ -1527,23 +1495,6 @@ textarea::-webkit-scrollbar-thumb:hover {
 /* ------------------- */
     /* Media Querys */
 /* ------------------- */
-
-/* @media (min-height: 800px) and (max-height: 100vw){
-    #nosotros, #servicios, #preguntas, #contacto, #pasos{
-        min-width: 100vw;
-        height: 100vh;
-        margin: 0 auto;
-        place-content: center;
-    }
-} */
-
-@media (min-height: 0px) and (max-height: 799px){
-    #nosotros, #servicios, #preguntas, #contacto, #pasos {
-        /* min-width: auto;
-        height: auto; */
-        place-content: center;
-    }
-}
 
 /* laptop */
 
@@ -1560,6 +1511,12 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
     .text .span-5{
         bottom: 103px;
+    }
+    .content-nosotros {
+        min-height: 90vh;
+    }
+    .content-nosotros .efecto {
+        min-height: 90vh;
     }
     #servicios {
         flex-direction: column;
@@ -2122,6 +2079,12 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
 }
 
+@media (max-width: 360px) {
+    .text {
+        scale: .99;
+    }
+}
+
 
 /* ------------------- */
     /* Animation Scroll */
@@ -2159,7 +2122,7 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
 }
 
-.modales, #nosotros, .dividir {
+.modales, .dividir {
     view-timeline-name: --reveal;
 
     animation-name: modales;
@@ -2222,7 +2185,7 @@ h4, .modal-2 i, .modal-3 i {
     }
 }
 
-.modal-1 li, .modal-1 p, .modal-3 p, .modal-2 p  {
+.modal-1 li, .modal-1 p, .modal-3 p, .modal-2 p {
     view-timeline-name: --reveal;
 
     animation-name: liModal;
@@ -2243,7 +2206,7 @@ h4, .modal-2 i, .modal-3 i {
     }
 }
 
-.grupoo-2 p{
+.grupoo-2 p, .cont p {
     view-timeline-name: --reveal;
 
     animation-name: modalG2;
