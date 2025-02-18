@@ -37,6 +37,8 @@
 
     --color-particles: .7;
 
+    --color-container-nosotros: .8;
+
     --color-text-caja: #ffffff7b;
 }
 .dark-mode{
@@ -63,6 +65,8 @@
 
     --color-text-form-h2: #6b46aa;
     --color-particles: .4;
+
+    --color-container-nosotros: 1;
 
     --color-text-caja: #4c4c4c;
 }
@@ -1922,11 +1926,11 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
     .content-nosotros {
         min-height: 40vh;
-        opacity: .8;
+        opacity: var(--color-container-nosotros);
     }
     .content-nosotros .efecto {
         min-height: 40vh;
-        background: radial-gradient(rgba(29, 27, 31, 0.859) 50px, rgba(33, 28, 33, 0.954) 30%, #000000 77%) ;
+        background: radial-gradient(rgba(29, 27, 31, 0.859) 50px, rgba(33, 28, 33, 0.954) 30%, #000000 75%) ;
     }
     .cont {
         display: none;
