@@ -1922,6 +1922,7 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
     .content-nosotros {
         min-height: 40vh;
+        opacity: .8;
     }
     .content-nosotros .efecto {
         min-height: 40vh;
