@@ -290,11 +290,15 @@ nav li:nth-child(4) {
     color: rgb(255, 255, 255) ;
     border: none;
     background-position: left center;
-    transition: background .2s ease-out;
+    transition: all .2s ease-out;
 }
   
 .button:hover {
     background-color: #884ede;
+}
+
+.button:active {
+    transform: translate(2px, 2px);
 }
 
 .modosLunaSol {
@@ -327,7 +331,7 @@ nav li:nth-child(4) {
 }
 
 .modosLunaSol .dark {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
 }
 
 .modosLunaSol .dark.active, .modosLunaSol .lite.active {
@@ -529,6 +533,10 @@ menu a:hover .rayaA {
     animation: whats 1s ease;
 }
 
+.container a:active {
+    transform: translate(2px, 2px);
+}
+
 .container a i {
     position: relative;
     top: .5px;
@@ -573,6 +581,7 @@ menu a:hover .rayaA {
 
 
 .text .span-1 {
+    
     border: solid 1px var(--color-text);
     border-radius: 20px;
     padding: 11px 11px;
@@ -929,6 +938,7 @@ h2 {
     padding: 30px;
     display: flex;
     gap: 30px;
+
     justify-content: space-between;
     margin: 40px 0px;
     animation: m1 3s ease;
@@ -936,6 +946,14 @@ h2 {
 }
 
 .modal-1 .content-ul ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+}
+
+.modal-1 .content-ul .content-web {
     width: 410px;
     display: flex;
     flex-direction: column;
@@ -943,7 +961,7 @@ h2 {
     z-index: 1;
 }
 
-.modal-1 .content-ul ul h4 {
+.modal-1 .content-ul h3 {
     text-align: center;
     color: #6b46aa;
     font-size: 15px;
@@ -1056,7 +1074,7 @@ h2 {
     z-index: 1;
 }
 
-.asesora h4 {
+.asesora h3 {
     font-size: 15px;
     color: #6b46aa;
     text-transform: uppercase;
@@ -1147,6 +1165,10 @@ h2 {
     color: #6b46aa;
     background-color: var(--color-background-a);
     transition: .2s;
+}
+
+.container-all a:active {
+    transform: translate(2px, 2px);
 }
 
 .container-all a i {
@@ -1488,8 +1510,8 @@ textarea::-webkit-scrollbar-thumb:hover {
     color: #ff8000; 
 }
 
-.redesS a:hover .facebook i {
-    color: #1628ae;
+.redesS a:hover .linkedin i {
+    color: #4556d7;
 }
 
 .redesS a:hover .whatsapp i {
@@ -1654,11 +1676,12 @@ textarea::-webkit-scrollbar-thumb:hover {
         display: block;
     }
 }
-@media (max-width: 1182px) {
-    .container-pasos .paso-2 p  {
-        bottom: 15px;
+/* @media (max-width: 1182px) {
+    .container-pasos .paso-2 {
+        margin-top: 20px;
     }
-}
+    
+} */
 @media (max-width: 975px) {
     form {
         min-width: 400px;
@@ -1688,6 +1711,12 @@ textarea::-webkit-scrollbar-thumb:hover {
 /* tablet */
 
 @media (max-width: 769px) {
+    .container-pasos .paso-2 {
+        margin-top: 20px;
+    }
+    .container-pasos .paso-3 {
+        margin-top: -20px;
+    }
     form {
         min-width: 280px;
         padding-left: 0px;
@@ -1976,7 +2005,7 @@ textarea::-webkit-scrollbar-thumb:hover {
         padding: 0 30px;
         text-align: center;
     }
-    .modal-2 h4, .modal-3 h4 {
+    .modal-2 h3, .modal-3 h3 {
         padding: 0 25px;
     }
     #pasos {
@@ -1990,10 +2019,13 @@ textarea::-webkit-scrollbar-thumb:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .container-pasos .pasoComun {
+    .container-pasos .paso-1, .container-pasos .paso-2 {
         margin-top: 100px;
     }
-    .container-pasos .pasoComun:nth-child(2), .container-pasos .pasoComun:nth-child(3) {
+    .container-pasos .pasoComun.paso-3 {
+        margin-top: 0px;
+    }
+    .container-pasos .pasoComun:nth-child(2) {
         margin-top: 50px;
     }
     .container-pasos .pasoComun p {
@@ -2158,7 +2190,7 @@ textarea::-webkit-scrollbar-thumb:hover {
     animation-range: entry 15% cover 30%;
 }
 
-@keyframes h4 {
+@keyframes h3 {
     from {
         opacity: 0;
         
@@ -2169,10 +2201,10 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
 }
 
-h4, .modal-2 i, .modal-3 i {
+h3, .modal-2 i, .modal-3 i {
     view-timeline-name: --reveal;
 
-    animation-name: h4;
+    animation-name: h3;
     animation-fill-mode: both;
 
     animation-timeline: --reveal;
@@ -2190,7 +2222,28 @@ h4, .modal-2 i, .modal-3 i {
     }
 }
 
-.modal-1 li, .modal-1 p, .modal-3 p, .modal-2 p {
+.modal-1 li {
+    view-timeline-name: --reveal;
+
+    animation-name: modal-1-li;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 10% cover 30%;
+}
+
+@keyframes modal-1-li {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.modal-1 p, .modal-3 p, .modal-2 p {
     view-timeline-name: --reveal;
 
     animation-name: liModal;
