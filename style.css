@@ -32,6 +32,7 @@
 
     --color-background-a: #ece1ff00;
     --color-background-a-hover: #6b46aad2;
+    --color-background-a-hover-2: #f7cbff22;
 
     --color-text-form-h2: #ffffff;
 
@@ -62,6 +63,7 @@
 
     --color-background-a: #ece1ff;
     --color-background-a-hover: #6b46aa82;
+    --color-background-a-hover-2: #d3b8f1d3;
 
     --color-text-form-h2: #6b46aa;
     --color-particles: .4;
@@ -557,6 +559,7 @@ menu a:hover .rayaA {
 
 .container a:hover {
     box-shadow: 0 0 20px var(--color-background-a-hover);
+    background-color: var(--color-background-a-hover-2);
 }
 
 .container p {
@@ -701,6 +704,7 @@ menu a:hover .rayaA {
 }
 
 .logos-slider {
+    z-index: 5;
     display: inline-block;
     animation: 200s sliderL infinite linear;
 }
@@ -736,17 +740,17 @@ menu a:hover .rayaA {
 }
 
 @keyframes bacg {
-    0% {background-image: url(./img/galeria/nuevas/7cd49ee6cc6cf37f60f354c14e0ed0b2.jpg);}
+    0% {background-image: url(./img/galeria/nuevas/1_img.webp);}
 
-    20% {background-image: url(./img/galeria/nuevas/foto-vista-superior.avif);}
+    20% {background-image: url(./img/galeria/nuevas/2_img.webp);}
 
-    40% {background-image: url(./img/galeria/nuevas/diseno-y-desarrollo-web-senati-1800-x-1190-1.jpg);}
+    40% {background-image: url(./img/galeria/nuevas/3_img.webp);}
 
-    60% {background-image: url(./img/galeria/nuevas/photo-1499750310107-5fef28a66643.jpeg);}
+    60% {background-image: url(./img/galeria/nuevas/4_img.webp);}
 
-    80% {background-image: url(./img/galeria/nuevas/pngtree-coffee-headphones-laptop-and-phone-in-stunning-3d-rendering-picture-image_4787691.jpg);}  
+    80% {background-image: url(./img/galeria/nuevas/5_img.webp);}  
 
-    100% {background-image: url(./img/galeria/nuevas/shutterstock_223243018-1000x699.jpg);}  
+    100% {background-image: url(./img/galeria/nuevas/6_img.webp);}  
 }
 
 .content-nosotros .efecto {
@@ -1182,6 +1186,7 @@ h2 {
 
 .container-all a:hover {
     box-shadow: 0 0 20px var(--color-background-a-hover);
+    background-color: var(--color-background-a-hover-2);
 }
 
 .container-preguntas-all {
@@ -2113,7 +2118,10 @@ textarea::-webkit-scrollbar-thumb:hover {
     }
     .redesS {
         width: 200px;
+        position: relative;
+        left: -10px;
     }
+    
 }
 
 @media (max-width: 360px) {
